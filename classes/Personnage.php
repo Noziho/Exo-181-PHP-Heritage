@@ -11,6 +11,9 @@ class Personnage {
     protected $nom;
     protected $x;
     protected $y;
+    protected $vie = 50;
+
+
 
     // Constructeur de ma classe permettant de définir des valeurs par défaut lorsqu'elle est instanciée
     public function __construct() {
@@ -44,4 +47,53 @@ class Personnage {
     public function getNom() {
         return $this->nom;
     }
+
+    /**
+     * @return int
+     */
+    public function getVie()
+    {
+        return $this->vie;
+    }
+
+    /**
+     * @param int $vie
+     */
+    public function setVie($vie)
+    {
+        $this->vie = $vie;
+    }
+
+    /**
+     * @return int
+     */
+    public function getX(): int
+    {
+        return $this->x;
+    }
+
+    /**
+     * @param int $x
+     */
+    public function setX(int $x): void
+    {
+        $this->x = $x;
+    }
+
+    /**
+     * @return int
+     */
+    public function getY(): int
+    {
+        return $this->y;
+    }
+
+    /**
+     * @param int $y
+     */
+    public function setY(int $y): void
+    {
+        $this->y = $y;
+    }
+
 } 
